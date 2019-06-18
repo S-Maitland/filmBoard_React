@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import FilmList from '../components/FilmList';
 import FilmForm from '../components/FilmForm';
-
+import '../FilmBox.css'
 class FilmBox extends Component{
 
   constructor(props){
@@ -45,13 +45,13 @@ class FilmBox extends Component{
 
   render(){
     return(
-      <div>
+      <div className="filmBox">
         <FilmForm onFilmSubmit={this.handleFilmSubmit}/>
         <h1>Upcoming Film Releases For UK</h1>
         <hr />
         <FilmList data = {this.state.data}/>
         <hr />
-        <a href="https://www.imdb.com/calendar/?region=gb">View More upcoming releases >></a>
+        <a className="upcomingReleasesLink" href="https://www.imdb.com/calendar/?region=gb">View More upcoming releases >></a>
       </div>
     );
   }

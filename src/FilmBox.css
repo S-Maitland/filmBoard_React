@@ -1,0 +1,22 @@
+.filmBox{
+  border: 3px solid black;
+  background-color: #ecf0f1;
+  color: #34495e;
+  display: inline-block;
+  margin: 3px 3px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.filmBox a{
+  text-decoration: none;
+}
+
+.filmBox p{
+  text-align: left;
+}
+
+.upcomingReleasesLink  {
+  background-color: lightblue;
+  border: 1px solid black;
+}

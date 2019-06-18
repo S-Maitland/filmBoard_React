@@ -9,6 +9,7 @@ class FilmForm extends Component{
     };
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleUrlChange = this.handleUrlChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleNameChange(event){
@@ -19,7 +20,7 @@ class FilmForm extends Component{
     this.setState({url: event.target.value});
   }
 
-  handlesubmit(event){
+  handleSubmit(event){
     event.preventDefault();
     if(!this.state.name.trim() || !this.state.url.trim()){
       return
